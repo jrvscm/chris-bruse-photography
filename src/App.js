@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import { REACT_APP_CLOUDINARY_API_URL } from './config';
 import './App.css';
 
 class App extends Component {
+  componentDidMount() {
+    console.log(REACT_APP_CLOUDINARY_API_URL)
+  }
+
+
   render() {
     return (
       <div className="App">
